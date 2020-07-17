@@ -6,7 +6,7 @@ class Article(models.Model):
     slug = models.SlugField()
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
-    # add in thumbnail later
+    thumb = models.ImageField(default='default.png',blank=True)
     # add in author later
 
     # To control how article is going to look when seen in shell (include title)
